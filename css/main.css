@@ -565,7 +565,7 @@ h1, h2 {
     потом делишь на 2, (иногда не нужно делить, по ситуации смотри */
     top: calc(50% - 32px / 2);
     z-index: 1;
-    background: url(/img/gallery/left_arrow.png) no-repeat center center;
+    background: url(../img/gallery/left_arrow.png) no-repeat center center;
     background-size: cover;
     outline: none;
     width: 20px;
@@ -1058,7 +1058,7 @@ h1, h2 {
         width: 100vw;
         height: 225vw;
         font-size: 30px;
-        background: url(/img/bg.jpg);
+        background: url(../img/bg.jpg);
         text-align: center;
     }
 
