@@ -235,10 +235,6 @@ h1, h2 {
     margin-top: 20px;
 }
 
-.subvideo {
-    height: 100px;
-    width: 170px;
-}
 
 /*========================
         Trainers 
@@ -414,10 +410,11 @@ h1, h2 {
 
 .review__item {
     display: flex;
-    height: 300px;
+    max-height: 300px;
     width: 555px;
     background-color: #222222;
 }
+
 
 .review__content {
     margin: 40px auto;
@@ -451,12 +448,13 @@ h1, h2 {
     color: #d9002b;
 }
 
+
 /*========================
         Gallery 
 ==========================*/
 
 .gallery {
-    margin-top: 80px;
+    margin: 80px auto 150px;
 }
 
 .gallery__inner {
@@ -474,16 +472,16 @@ h1, h2 {
 
 .gallery__inner::before {
     left: 0;
-    -webkit-box-shadow: inset 108px 0px 67px -23px rgba(0,0,0,1);
-    -moz-box-shadow: inset 108px 0px 67px -23px rgba(0,0,0,1);
-    box-shadow: inset 108px 0px 67px -23px rgba(0,0,0,1);
+    -webkit-box-shadow: inset 108px 0px 90px -23px rgba(0,0,0,1);
+    -moz-box-shadow: inset 108px 0px 90px -23px rgba(0,0,0,1);
+    box-shadow: inset 108px 0px 90px -23px rgba(0,0,0,1);
 }
 
 .gallery__inner::after {
     right: 0;
-    -webkit-box-shadow: inset -103px 0px 67px -23px rgba(0,0,0,1);
-    -moz-box-shadow: inset -103px 0px 67px -23px rgba(0,0,0,1);
-    box-shadow: inset -103px 0px 67px -23px rgba(0,0,0,1);
+    -webkit-box-shadow: inset -108px 0px 90px -23px rgba(0,0,0,1);
+    -moz-box-shadow: inset -108px 0px 90px -23px rgba(0,0,0,1);
+    box-shadow: inset -108px 0px 90px -23px rgba(0,0,0,1);
 }
 
 .gallery__item {
@@ -664,15 +662,21 @@ h1, h2 {
     margin-bottom: 50px;
 }
 
+.blog__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .blog__item {
     height: 525px;
-    width: 266px;
+    width: 23%;
     border: 2px solid #222222;
 }
 
-.blog__inner {
-    display: flex;
-    justify-content: space-between;
+.blog__img {
+    width: 100%;
+    height: 200px;
 }
 
 .blog__content {
@@ -736,7 +740,9 @@ h1, h2 {
 ==========================*/
 
 .call {
-    background: url(../img/callbg.png) center no-repeat;
+    background: url(../img/callbg.png);
+    background-size: cover;
+    background-position: center;
     min-height: 515px;
 }
 
@@ -757,12 +763,11 @@ h1, h2 {
     padding-top: 83px;
     font-weight: 400;
     font-size: 18px;
-    padding-bottom: 80px;
     line-height: 30px;
 }
 
 .button--call {
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 
 /*========================
@@ -819,7 +824,6 @@ h1, h2 {
 .footer__block-second {
     width: 215px;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -870,7 +874,6 @@ h1, h2 {
     margin-top: 52px;
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
 }
 
 .button__item {
@@ -918,7 +921,7 @@ h1, h2 {
     padding-bottom: 35px;
 }
 
-.nav__link-footer:hover {
+.nav--second .nav__link:hover {
     color: #111;
 }
 
@@ -931,4 +934,34 @@ h1, h2 {
 .footer__bottom {
     margin: 25px auto;
     text-align: center;
+}
+
+
+
+/*========================
+        Media 
+==========================*/
+
+@media (max-width: 1300px) {
+
+}
+
+@media (max-width: 1100px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 849px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 414px) {
+
 }
