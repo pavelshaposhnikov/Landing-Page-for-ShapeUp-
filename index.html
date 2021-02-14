@@ -10,13 +10,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShapeUp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo-icon.png" type="image/x-icon">
 </head>
-<body>
+<body id="body">
     <!-- Header -->
     <header class="header" id="home">
         <div class="container">
@@ -185,74 +185,82 @@
                 <h3 class="pretitle">Reviews</h3>
                 <h2 class="title title--trainers">What our clients say</h2>
             </div> <!-- /.reviews__header -->
-            <div class="reviews__inner">
-                <div class="review__item">
-                    <div class="review__item-wrapper">
-                        <div class="review__content">
-                            <h3 class="pretitle pretitle--reviews">Rebecca Morrison</h3>
-                            <p class="review__subtitle">Social Worker</p>
-                            <p class="review__text">
-                                Curabitur interdum nulla ligula, ac iaculis est venon. 
-                                Quisque auctor, ex id posuere aliquam, lorem mauris 
-                                venenatis sem, eu facilisis magna nibh . Praesent 
-                                laoreet leo diam, ut suscipit purus malesuada laoreet. 
-                                Aliquam erat volutpat.
-                            </p>
-                            <div class="review__stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div> <!-- /.review__stars -->
-                        </div> <!-- /.review__content -->
-                    </div> <!-- /.review__item-wrapper -->
-                </div> <!-- /.review__item -->
-                <div class="review__item">
-                    <div class="review__item-wrapper">
-                        <div class="review__content">
-                            <h3 class="pretitle pretitle--reviews">Daniel Bllomberg</h3>
-                            <p class="review__subtitle">Salesman</p>
-                            <p class="review__text">
-                                Donec nec interdum turpis. Donec faucibus facilisis 
-                                enim, ut fringilla urna elementum non. Mauris vel 
-                                mauris ac tellus feugiat maximus. Sed augue enim, 
-                                lacinia non dui ut, mollis vulputate felis. Vivamus 
-                                consequat bibendum ullamcorper.
-                            </p>
-                            <div class="review__stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div> <!-- /.review__stars -->
-                        </div> <!-- /.review__content -->
-                    </div> <!-- /.review__item-wrapper -->
-                </div> <!-- /.review__item -->
-                <div class="review__item">
-                    <div class="review__item-wrapper">
-                        <div class="review__content">
-                            <h3 class="pretitle pretitle--reviews">Daniel Bllomberg</h3>
-                            <p class="review__subtitle">Salesman</p>
-                            <p class="review__text">
-                                Donec nec interdum turpis. Donec faucibus facilisis 
-                                enim, ut fringilla urna elementum non. Mauris vel 
-                                mauris ac tellus feugiat maximus. Sed augue enim, 
-                                lacinia non dui ut, mollis vulputate felis. Vivamus 
-                                consequat bibendum ullamcorper.
-                            </p>
-                            <div class="review__stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div> <!-- /.review__stars -->
-                        </div> <!-- /.review__content -->
-                    </div> <!-- /.review__item-wrapper -->
-                </div> <!-- /.review__item -->
-            </div> <!-- /.reviews__inner -->
+            <div class="reviews__slider">
+                <div class="review__item-wrapper">
+                    <div class="review__item">
+                        <div class="review__item-inner">
+                            <div class="review__content">
+                                <h3 class="pretitle pretitle--reviews">Rebecca Morrison</h3>
+                                <p class="review__subtitle">Social Worker</p>
+                                <p class="review__text">
+                                    Curabitur interdum nulla ligula, ac iaculis est venon. 
+                                    Quisque auctor, ex id posuere aliquam, lorem mauris 
+                                    venenatis sem, eu facilisis magna nibh . Praesent 
+                                    laoreet leo diam, ut suscipit purus malesuada laoreet. 
+                                    Aliquam erat volutpat.
+                                </p>
+                                <div class="review__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div> <!-- /.review__stars -->
+                            </div> <!-- /.review__content -->
+                        </div> <!-- /.review__item-inner -->
+                    </div> <!-- /.review__item -->
+                </div> <!-- /.review__item-wrapper -->
+                
+                <div class="review__item-wrapper">
+                    <div class="review__item">
+                        <div class="review__item-inner">
+                            <div class="review__content">
+                                <h3 class="pretitle pretitle--reviews">Daniel Bllomberg</h3>
+                                <p class="review__subtitle">Salesman</p>
+                                <p class="review__text">
+                                    Donec nec interdum turpis. Donec faucibus facilisis 
+                                    enim, ut fringilla urna elementum non. Mauris vel 
+                                    mauris ac tellus feugiat maximus. Sed augue enim, 
+                                    lacinia non dui ut, mollis vulputate felis. Vivamus 
+                                    consequat bibendum ullamcorper.
+                                </p>
+                                <div class="review__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div> <!-- /.review__stars -->
+                            </div> <!-- /.review__content -->
+                        </div> <!-- /.review__item-inner -->
+                    </div> <!-- /.review__item -->
+                </div> <!-- /.review__item-wrapper -->
+                
+                <div class="review__item-wrapper">
+                    <div class="review__item">
+                        <div class="review__item-inner">
+                            <div class="review__content">
+                                <h3 class="pretitle pretitle--reviews">Daniel Bllomberg</h3>
+                                <p class="review__subtitle">Salesman</p>
+                                <p class="review__text">
+                                    Donec nec interdum turpis. Donec faucibus facilisis 
+                                    enim, ut fringilla urna elementum non. Mauris vel 
+                                    mauris ac tellus feugiat maximus. Sed augue enim, 
+                                    lacinia non dui ut, mollis vulputate felis. Vivamus 
+                                    consequat bibendum ullamcorper.
+                                </p>
+                                <div class="review__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div> <!-- /.review__stars -->
+                            </div> <!-- /.review__content -->
+                        </div> <!-- /.review__item-inner -->
+                    </div> <!-- /.review__item -->
+                </div> <!-- /.review__item-wrapper -->
+            </div> <!-- /.reviews__slider -->
         </div> <!-- /.container -->
     </section>
 
