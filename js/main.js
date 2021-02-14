@@ -42,5 +42,19 @@ $('.reviews__inner').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 5000,
+  dots: true,
+  arrows: false,
+}); 
+
+/* Scroll Up Button */
+  
+$(document).ready(function() { //when document is ready
+$(window).scroll(function() { //when webpage is scrolled
+  if ($(this).scrollTop() > 500) { //if scroll from top is more than 500
+$('.scroll-up').fadeIn(); //display element with class 'top-scroll'; opacity increases
+  } else { //if not
+$('.scroll-up').fadeOut(); //hide element with class 'top-scroll'; opacity decreases
+    }
+  });
 });
