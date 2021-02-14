@@ -12,6 +12,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: none
 }
 
 a, button, input, select {
@@ -167,7 +168,8 @@ h1, h2 {
 
 .mobile-nav {
     display: none;
-    text-align: right;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 .nav-toggle {
@@ -176,7 +178,6 @@ h1, h2 {
     text-align: right;
     background: transparent;
     border: 1px solid transparent;
-    transform: translate(-50%, -50%);
 }
   
 .nav-toggle:focus {
@@ -188,16 +189,16 @@ h1, h2 {
     display: block;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .2s ease all;
-    transition: .2s ease all;
     border-radius: 3px;
     height: 3px;
     width: 35px;
     margin-bottom: 5px;
+    transition: all .3s linear;
 }
   
 .nav-toggle .bar-bot {
     margin-bottom: 0;
+    transition: all .3s linear;
 }
   
 .opened .bar-top {
@@ -205,6 +206,7 @@ h1, h2 {
     transform: rotate(45deg);
     -webkit-transform-origin: 15% 15%;
     transform-origin: 15% 15%;
+    transition: all .3s linear;
 }
 
 .opened .bar-mid {
@@ -216,6 +218,7 @@ h1, h2 {
     transform: rotate(-45deg);
     -webkit-transform-origin: 15% 95%;
     transform-origin: 15% 95%;
+    transition: all .3s linear;
 }
 
 /* MOBILE NAV END */
@@ -367,6 +370,7 @@ h1, h2 {
     transition: all 0.5s ease;
     margin-bottom: 25px;
     opacity: 0;
+    width: 100%;
 }
 
 .info__name {
@@ -384,6 +388,8 @@ h1, h2 {
 
 .trainers__item:hover .trainer__info {
     opacity: 1;
+    transition: all 0.6s ease;
+    background: linear-gradient(90deg, rgba(248,7,89,1) 0%, rgba(248,7,89,0.5354516806722689) 21%, rgba(248,7,89,0.40940126050420167) 83%, rgba(248,7,89,1) 100%);
 }
 
 /*========================
@@ -461,25 +467,40 @@ h1, h2 {
 }
 
 .reviews__header {
-    margin-top: 85px;
+    padding-top: 85px;
     text-align: center;
     margin-bottom: 45px;
 }
 
-.reviews__inner {
-    display: flex;
-    justify-content: space-between;
+.reviews__slider {
+    width: 100%;
+}
+
+.review__item-wrapper {
+    margin: 0 10px;
 }
 
 .review__item {
-    margin-right: 20px;
     max-height: 300px;
     width: 550px;
+    max-width: 550px;
+
     background-color: #222222;
     outline: none;
 }
 
-.review__item-wrapper {
+@media (max-width: 1190px) {
+    .review__item {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 620px) {
+    /* тут стили для карточки отзыва для мобилок,
+    сделай картинку меньше, или убери, отступы и и высоту карточки меньше */
+}
+
+.review__item-inner {
     background: url(../img/reviews/icon1.png) no-repeat;
     background-size: contain;
     height: 300px;
@@ -532,6 +553,7 @@ h1, h2 {
     border-radius: 15px;
     background-color: #fff;
     font-size: 0;
+    cursor: pointer;
 }
 
 .slick-dots li {
@@ -588,7 +610,6 @@ h1, h2 {
 .gallery__item {
     margin: 0 10px;
     width: 370px;
-    height: 370px;
     outline: none;
 }
 
@@ -767,13 +788,16 @@ h1, h2 {
 .blog__inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .blog__item {
     height: 525px;
     width: 23%;
     border: 2px solid #222222;
+
+    min-width: 250px;
+    margin: 10px;
 }
 
 .blog__img {
@@ -1063,15 +1087,6 @@ a.scroll-up:hover {
 ==========================*/
 
 @media (max-width: 1130px) {
-
-    .reviews {
-        display: none;
-    }
-
-    .blog {
-        display: none;
-    }
-
     .tariff__inner {
         padding: 0 20px;
     }
@@ -1211,6 +1226,16 @@ a.scroll-up:hover {
 
 @media (max-width: 849px) {
 
+    .trainers__content {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .trainers__item {
+        margin: 20px;
+        min-width: 200px;
+    }
+
     .service__item {
         width: 250px;
     }
@@ -1264,7 +1289,7 @@ a.scroll-up:hover {
 
     .footer__block-second {
         width: 23%;
-        text-align: left;
+        text-align: center;
     }
 
     .footer__icon--text {
@@ -1284,6 +1309,98 @@ a.scroll-up:hover {
     }
 }
 
+@media (max-width: 631px) {
+
+    .header__inner {
+        width: auto;
+    }
+
+    .about__video {
+        width: 500px;
+    }
+
+    .about__video iframe {
+        width: 500px;
+    }
+
+    .footer__block-second {
+        width: 30%;
+    }
+
+    .footer__block-third {
+        width: 50%;
+    }
+
+    .call__header {
+        width: auto;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+    .header__inner {
+        margin-top: 81px;
+    }
+
+    .header__buttons {
+        display: inline-block;
+    }
+
+    .header__buttons .button--white {
+        margin-top: 20px;
+    }
+
+    .about__text {
+        width: auto;
+    }
+
+    .about__video {
+        width: 400px;
+    }
+
+    .about__video iframe {
+        width: 400px;
+    }
+
+    .tariff__item {
+        width: 350px;
+    }
+}
+
 @media (max-width: 414px) {
 
+    .header__buttons {
+        width: auto;
+    }
+
+    .about__video {
+        width: 300px;
+    }
+
+    .about__video iframe {
+        width: 300px;
+    }
+
+    .tariff__item {
+        width: 260px;
+    }
+
+    .call__header {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 335px) {
+    .header__inner {
+        margin-top: 25px;
+    }
+
+    .header__buttons {
+        margin-bottom: 25px;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
 }
