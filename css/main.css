@@ -37,10 +37,9 @@ h1, h2 {
 ==========================*/
 
 .title {
-    margin-top: 20px;
+    margin: 20px 0 30px;
     font-weight: 700;
     font-size: 30px;
-    margin-bottom: 30px;
 }
 
 .pretitle {
@@ -301,8 +300,7 @@ h1, h2 {
 
 .trainers__inner {
     text-align: center;
-    margin-top: 160px;
-    margin-bottom: 100px;
+    margin: 160px auto 100px;
 }
 
 
@@ -619,8 +617,6 @@ h1, h2 {
 
 .slick-arrow {
     position: absolute;
-    /* 50% это позиция на которой ты хочешь что бы был элемент, по центу - 50%. отнимаешь 32пикс это высота самого элемента,
-    потом делишь на 2, (иногда не нужно делить, по ситуации смотри */
     top: calc(50% - 32px / 2);
     z-index: 1;
     background: url(../img/gallery/left_arrow.png) no-repeat center center;
@@ -649,9 +645,8 @@ h1, h2 {
 ==========================*/
 
 .tariffs__header {
-    margin-top: 50px;
+    margin: 50px 0;
     text-align: center;
-    margin-bottom: 48px;
 }
 
 .tariffs__inner {
@@ -823,8 +818,7 @@ h1, h2 {
 }
 
 .blog__text {
-    padding-top: 30px;
-    padding-bottom: 25px;
+    padding: 30px 0 25px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -1006,9 +1000,7 @@ h1, h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    padding-bottom: 3px;
+    margin: 0 10px 10px 0;
     padding: 0 25px;
     height: 36px;
     min-width: 100px;
@@ -1043,8 +1035,7 @@ h1, h2 {
 }
 
 .nav--second {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 35px 0;
 }
 
 .nav--second .nav__link:hover {
@@ -1064,6 +1055,10 @@ h1, h2 {
 
 .scroll-up {
     display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 a.scroll-up {
@@ -1335,6 +1330,20 @@ a.scroll-up:hover {
         width: auto;
     }
 
+    .review__item {
+        max-height: 250px;
+    }
+
+    .review__item-inner {
+        width: 190px;
+    }
+
+    .review__content {
+        width: 201px;
+        padding-top: 12px;
+        margin-left: 218px;
+    }
+
 }
 
 @media (max-width: 510px) {
@@ -1399,8 +1408,4 @@ a.scroll-up:hover {
     .header__buttons {
         margin-bottom: 25px;
     }
-}
-
-.no-scroll {
-    overflow: hidden;
 }
