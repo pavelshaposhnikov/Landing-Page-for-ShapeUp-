@@ -75,8 +75,6 @@ $('.gallery__slider').slick({
 
 
 
-
-
 /* Reviews Slider */
 $('.reviews__slider').slick({
   slidesToShow: 2,
@@ -92,9 +90,6 @@ $('.reviews__slider').slick({
       }
     ]
 }); 
-
-
-
 
 
 /* Scroll Up Button */
