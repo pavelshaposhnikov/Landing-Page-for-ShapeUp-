@@ -172,7 +172,7 @@ h1, h2 {
 }
 
 .nav-toggle {
-    padding: 10px 0;
+    margin: 15px 0;
     position: relative;
     text-align: right;
     background: transparent;
@@ -322,6 +322,7 @@ h1, h2 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    background-position: center;
 }
 
 .trainers__item:last-child {
@@ -336,31 +337,24 @@ h1, h2 {
 }
 
 
-.trainers__item--first {
+.trainers__item:first-child {
     background: url(../img/trainers/trainer1.png) no-repeat;
-    background-position: center;
 }
 
-.trainers__item--second {
+.trainers__item:nth-child(2) {
     background: url(../img/trainers/trainer2.png) no-repeat;
-    background-position: center;
 }
 
-
-.trainers__item--third {
+.trainers__item:nth-child(3) {
     background: url(../img/trainers/trainer3.png) no-repeat;
-    background-position: center;
 }
 
-
-.trainers__item--fourth {
+.trainers__item:nth-child(4) {
     background: url(../img/trainers/trainer4.png) no-repeat;
-    background-position: center;
 }
 
-.trainers__item--fifth {
+.trainers__item:nth-child(5) {
     background: url(../img/trainers/trainer5.png) no-repeat;
-    background-position: center;
 }
 
 
@@ -1205,8 +1199,8 @@ a.scroll-up:hover {
     .service__item--text {
         font-size: 15px;
     }
-    
-     .trainers__item {
+
+    .trainers__item {
         filter: grayscale(0);
         border: 2px solid #f80759;
     }
