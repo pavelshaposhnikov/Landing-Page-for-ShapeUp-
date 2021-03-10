@@ -1205,6 +1205,16 @@ a.scroll-up:hover {
     .service__item--text {
         font-size: 15px;
     }
+    
+     .trainers__item {
+        filter: grayscale(0);
+        border: 2px solid #f80759;
+    }
+
+    .trainer__info {
+        opacity: 1;
+        background: linear-gradient(90deg, rgba(248,7,89,1) 0%, rgba(248,7,89,0.5354516806722689) 21%, rgba(248,7,89,0.40940126050420167) 83%, rgba(248,7,89,1) 100%);
+    }
 
     .info__name {
         font-size: 21px;
